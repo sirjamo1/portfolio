@@ -82,10 +82,17 @@ header {
 }
 
 /*👉********************************************PROJECTS👈*/
+.projects-title {
+    text-align: center;
+    margin: 50px 0px;
+}
 .projects-container {
     display: grid;
-    margin-top: 100px;
-/*👉    background-image: -webkit-linear-gradient(
+/*👉    margin-top: 20px;👈*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+   /*👉 grid-template-rows: repeat(auto-fill, minmax(350px, 1fr));👈*/
+    /*👉    background-image: -webkit-linear-gradient(
         220deg,
         var(--honeydew) 29.6%,
         var(--cerulean) 30%,
@@ -93,10 +100,7 @@ header {
         var(--honeydew) 61%
     );👈*/
 }
-.projects-container h2 {
-    text-align: center;
-    margin: 20px 0px;
-}
+
 .project-card {
     margin: 15px;
     background-color: var(--non-photo-blue);
@@ -110,13 +114,12 @@ header {
 
 .project-card-screenshot {
     width: 95%;
-   max-height: 230px;
-    object-fit:contain;
+    max-height: 230px;
+    object-fit: contain;
     overflow: hidden;
     border-radius: 6px;
     align-self: center;
     padding-top: 6px;
-    
 }
 .project-card-title-links {
     display: flex;
@@ -124,13 +127,11 @@ header {
     padding: 10px 20px;
 }
 .made-with-icons {
-  transform: scale(1.1);
-  display: flex;
-  align-items: center;
-
-  }
+    transform: scale(1.1);
+    display: flex;
+    align-items: center;
+}
 .made-with-icons * svg {
-
 }
 .project-card-title-links > h4 {
 }
@@ -140,10 +141,8 @@ header {
     text-decoration: none;
 }
 .show-hide-button-container {
-  width: 100%;
-  display: flex;
-
- 
+    width: 100%;
+    display: flex;
 }
 .show-hide-button-container > button {
     transition: 2s;
@@ -151,15 +150,20 @@ header {
     z-index: 99;
     height: 25px;
     width: 50%;
-    border: var(--cerulean) 1px solid;
+    /*👉 border: var(--cerulean) 1px solid;👈*/
     border-top: none;
+    border-bottom: none;
     cursor: pointer;
 }
 .show-hide-description-button {
-border-radius: 0px 0px 0px 6px;
+    border-radius: 0px 0px 0px 6px;
+    border-right: var(--cerulean) 1px solid;
+    border-left: none;
 }
 .show-hide-features-button {
-border-radius: 0px 0px 6px 0px;
+    border-radius: 0px 0px 6px 0px;
+    border-left: var(--cerulean) 1px solid;
+    border-right: none;
 }
 .project-card-description {
     padding: 3px 10px;
@@ -168,6 +172,9 @@ border-radius: 0px 0px 6px 0px;
 .project-card-features {
     padding: 3px 10px;
     transition: ease-in-out 0.4s;
+}
+.project-card-features > ul > li {
+    list-style-position: inside;
 }
 
 /*👉********************************************CONTACT👈*/

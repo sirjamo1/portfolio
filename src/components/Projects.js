@@ -14,6 +14,11 @@ import weatherApp_500 from "../assets/screenshots/weather-app-500.png";
 import weatherApp_1000 from "../assets/screenshots/weather-app-1000.png";
 import imageSlider_500 from "../assets/screenshots/image-slider-500.png";
 import imageSlider_1000 from "../assets/screenshots/image-slider-1000.png";
+import rockPaperScissors_500 from "../assets/screenshots/rock-paper-scissors-500.png";
+import rockPaperScissors_1000 from "../assets/screenshots/rock-paper-scissors-1000.png";
+import tenzies_500 from "../assets/screenshots/react-tenzies-game-500.png";
+import tenzies_1000 from "../assets/screenshots/react-tenzies-game-1000.png";
+
 import { useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { RxOpenInNewWindow } from "react-icons/rx";
@@ -37,7 +42,7 @@ const Projects = () => {
                 <SiFirebase />,
             ],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Find Waldo and friends in a timed challenge, (best suited for pc).",
             features: [
                 "Timer starts when user clicks start, stops when last character is found.",
                 "Option to submit score to leader board (fireStore).",
@@ -58,14 +63,15 @@ const Projects = () => {
             showFeatures: false,
             madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Classic battleships game with a few modern twists, (best suited for pc).",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Place ships on board by dragging/dropping (either horizontal or vertical).",
+                "Random placement for a quick game.",
+                "Sonar (P1: Reveals ships with two blinks of opacity change. P2: Next shot Guaranteed).",
+                "Wrench (repair a ship).",
+                "Text log for each move/incident (type writer animation).",
+                "Sounds for boat placement, hit, miss, sunk ship, sonar wrench and digital typewriter.",
+                "Reset game.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/battleship",
             livePreview: "https://sirjamo1.github.io/Battleship/",
@@ -85,14 +91,14 @@ const Projects = () => {
                 <SiFirebase />,
             ],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Bean Gram is Mr Beans take on a simplified Facebook/Instagram.",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Sign in/create account with email and password or can sign in with google.",
+                "Change user profile picture and name.",
+                "Upload picture with description.",
+                "Comment on images.",
+                "Like images.",
+                "Fully responsive.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/bean-gram",
             livePreview: "https://sirjamo1.github.io/bean-gram/",
@@ -105,15 +111,10 @@ const Projects = () => {
             showDescription: false,
             showFeatures: false,
             madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+            description: "Create and edit a CV, (best suited for pc).",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Add and delete sections",
+                "Edit information in sections",
             ],
             gitHubRepository: "https://github.com/sirjamo1/cv-project",
             livePreview: "https://sirjamo1.github.io/cv-project/",
@@ -127,14 +128,15 @@ const Projects = () => {
             showFeatures: false,
             madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Weather app, user types in a location to find the current and forecast weather.",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Searches user input in json fil to retrieve an id..",
+                "Uses id to fetch api from https://openweathermap.org (free version).",
+                "Sorts/calculates data into highs, lows etc.",
+                "Toggle switch to view temperatures in celsius or fahrenheit.",
+                "Shows forecast of available data.",
+                "Changing wind direction image.",
+                "Backgrounds change depending on the city local time.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/weather-app",
             livePreview: "https://sirjamo1.github.io/weather-App/",
@@ -148,14 +150,11 @@ const Projects = () => {
             showFeatures: false,
             madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Memory game in which the user cannot click the same image twice.",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Shuffles cards after each click.",
+                "Resets score if card is clicked twice.",
+                "Logs score to high score.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/memory-game",
             livePreview: "https://sirjamo1.github.io/memory-game/",
@@ -169,14 +168,15 @@ const Projects = () => {
             showFeatures: false,
             madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+                "Etch a Sketch is a remake of the classic toy, draw continuos drawings.",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "When mouse moves over the display, squares turn black.",
+                "Number of squares per row can be changed, to make sharper drawings.",
+                "Square color options, black, gradient and multicolored.",
+                "Random button will fill the display with multicolored squares.",
+                "Reset screen to blank (with a shake animation).",
+                "Buttons spin when clicked",
+                "Sounds include drawing, clicking and shaking.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/etch-a-sketch",
             livePreview: "https://sirjamo1.github.io/Etch-a-Sketch/",
@@ -189,18 +189,53 @@ const Projects = () => {
             showDescription: false,
             showFeatures: false,
             madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
-            description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Praesent ac lorem ac sapien convallis consectetur eu ac metus. Maecenas ac interdum diam. Nulla ullamcorper turpis risus, id dapibus nulla commodo in.",
+            description: "Image slider to view your favorite pictures.",
             features: [
-                "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
-                "Updates best score.",
-                "View leader board.",
-                "Characters fade when found.",
-                "Animation on timer container when starting and finishing.",
+                "Image changes every 5 seconds.",
+                "Photographers name changes with image.",
+                "Image alt changes with image.",
+                "Dots change with image.",
+                "Click image to pause/resume 5 second changes.",
+                "Click left/right/dot buttons to change image (also resumes 5 second changes).",
+                "Animation pause/play pops up on click.",
             ],
             gitHubRepository: "https://github.com/sirjamo1/image-slider",
             livePreview: "https://sirjamo1.github.io/Image-Slider/",
+        },
+        {
+            name: "Rock Paper Scissors",
+            key: 8,
+            src500: rockPaperScissors_500,
+            src1000: rockPaperScissors_1000,
+            showDescription: false,
+            showFeatures: false,
+            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            description: "Classic rock paper scissors game.",
+            features: [
+                "First to 5 Wins.",
+                "Sounds include rock, paper, scissors, cheer and you lose.",
+                "Text describing the round and end result.",
+            ],
+            gitHubRepository: "https://github.com/sirjamo1/Rock-Paper-Scissors",
+            livePreview: "https://sirjamo1.github.io/Rock-Paper-Scissors/",
+        },
+        {
+            name: "Tenzies Game",
+            key: 9,
+            src500: tenzies_500,
+            src1000: tenzies_1000,
+            showDescription: false,
+            showFeatures: false,
+            madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            description:
+                "Roll a dice and save a selection, then roll again until all dice are the same.",
+            features: [
+                "Rolls all un-highlighted dice.",
+                "Keeps track of number of rolls and time.",
+                "Keeps track of high scores.",
+            ],
+            gitHubRepository: "https://github.com/sirjamo1/React-Tenzies-Game",
+            livePreview: "https://sirjamo1.github.io/React-Tenzies-Game/",
         },
     ]);
     const showHideDescription = (givenKey) => {
@@ -223,7 +258,7 @@ const Projects = () => {
 
     return (
         <div className="projects-container">
-            <h2>Projects</h2>
+            
             {projects.map((project) => {
                 return (
                     <div key={project.key} className="project-card">
@@ -261,7 +296,7 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
-                        <p
+                        <section
                             className="project-card-description"
                             style={{
                                 opacity: project.showDescription ? "1" : "0",
@@ -270,8 +305,10 @@ const Projects = () => {
                                     : "0px",
                             }}
                         >
-                            {project.description}
-                        </p>
+                            {" "}
+                            <h5>Description</h5>
+                            <p>{project.description}</p>
+                        </section>
                         <section
                             className="project-card-features"
                             style={{
@@ -279,11 +316,14 @@ const Projects = () => {
                                 fontSize: project.showFeatures ? "1rem" : "0px",
                             }}
                         >
-                     
                             <h5>Features</h5>
                             <ul>
-                                {project.features.map((feature) => {
-                                    return <li>{feature}</li>;
+                                {project.features.map((feature, i) => {
+                                    return (
+                                        <li key={`${project.key}${i}`}>
+                                            {feature}
+                                        </li>
+                                    );
                                 })}
                             </ul>
                         </section>
@@ -314,9 +354,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-// <ul>
-//     {project.features.map((feature) => {
-//         return <li>{feature}</li>;
-//     })}
-// </ul>;
