@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d6440771.css",
+    "main.js": "/portfolio/static/js/main.6e146b7c.js",
+    "static/media/profilePic_1600w.jpg": "/portfolio/static/media/profilePic_1600w.de4d5268d536e3db2be2.jpg",
+    "static/media/wheres-waldo-1000.png": "/portfolio/static/media/wheres-waldo-1000.702dbac64e1e9fc55c3b.png",
+    "static/media/react-tenzies-game-1000.png": "/portfolio/static/media/react-tenzies-game-1000.215176ed067def09f75d.png",
+    "static/media/battleships-1000.png": "/portfolio/static/media/battleships-1000.e8a252271b3240bf4dec.png",
+    "static/media/rock-paper-scissors-1000.png": "/portfolio/static/media/rock-paper-scissors-1000.c573a96fb50c33326e4e.png",
+    "static/media/profilePic_1000w.jpg": "/portfolio/static/media/profilePic_1000w.57f34b2bef4cd5534be0.jpg",
+    "static/media/weather-app-1000.png": "/portfolio/static/media/weather-app-1000.2d4218b0781b95561a8d.png",
+    "static/media/image-slider-1000.png": "/portfolio/static/media/image-slider-1000.35361a7b31998de55d83.png",
+    "static/media/wheres-waldo-500.png": "/portfolio/static/media/wheres-waldo-500.a56592174cd5ab745921.png",
+    "static/media/bean-gram-1000.png": "/portfolio/static/media/bean-gram-1000.6d104191bbc5c1435d6d.png",
+    "static/media/battleships-500.png": "/portfolio/static/media/battleships-500.6d7b3566a6032493980e.png",
+    "static/media/react-tenzies-game-500.png": "/portfolio/static/media/react-tenzies-game-500.e23030ff1483f7b541bc.png",
+    "static/media/rock-paper-scissors-500.png": "/portfolio/static/media/rock-paper-scissors-500.6bb5594ee2257859e453.png",
+    "static/media/profilePic_500w.jpg": "/portfolio/static/media/profilePic_500w.a2f9b354e77bdd16611b.jpg",
+    "static/media/weather-app-500.png": "/portfolio/static/media/weather-app-500.5b457962c86538553e51.png",
+    "static/media/image-slider-500.png": "/portfolio/static/media/image-slider-500.a0f6b8a23a9f0f28d479.png",
+    "static/media/cv-project-1000.png": "/portfolio/static/media/cv-project-1000.e05760beb72886c363d1.png",
+    "static/media/memory-game-1000.png": "/portfolio/static/media/memory-game-1000.4fba17cb1ad09644fd1d.png",
+    "static/media/bean-gram-500.png": "/portfolio/static/media/bean-gram-500.d0f83c10d7de653c9143.png",
+    "static/media/etch-a-sketch-1000.png": "/portfolio/static/media/etch-a-sketch-1000.5892d9772d3a77e507da.png",
+    "static/media/cv-project-500.png": "/portfolio/static/media/cv-project-500.93a7ff2b8f07b51bdfa0.png",
+    "static/media/memory-game-500.png": "/portfolio/static/media/memory-game-500.de68594bc2f06cf50ae9.png",
+    "static/media/etch-a-sketch-500.png": "/portfolio/static/media/etch-a-sketch-500.3eb92f0e276e5506c09d.png",
+    "index.html": "/portfolio/index.html",
+    "main.d6440771.css.map": "/portfolio/static/css/main.d6440771.css.map",
+    "main.6e146b7c.js.map": "/portfolio/static/js/main.6e146b7c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6440771.css",
+    "static/js/main.6e146b7c.js"
+  ]
+}
