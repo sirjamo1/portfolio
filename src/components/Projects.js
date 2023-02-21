@@ -241,24 +241,29 @@ const Projects = () => {
     const showHideDescription = (givenKey) => {
         let prevProjects = [...projects];
         for (let i = 0; i < prevProjects.length; i += 1) {
-            if (prevProjects[i].key === givenKey)
+            if (prevProjects[i].key === givenKey) {
                 prevProjects[i].showDescription =
                     !prevProjects[i].showDescription;
+                if (prevProjects[i].showFeatures === true)
+                    prevProjects[i].showFeatures = false;
+            }
         }
         setProjects(prevProjects);
     };
     const showHideFeatures = (givenKey) => {
         let prevProjects = [...projects];
         for (let i = 0; i < prevProjects.length; i += 1) {
-            if (prevProjects[i].key === givenKey)
+            if (prevProjects[i].key === givenKey) {
                 prevProjects[i].showFeatures = !prevProjects[i].showFeatures;
+                if (prevProjects[i].showDescription === true)
+                    prevProjects[i].showDescription = false;
+            }
         }
         setProjects(prevProjects);
     };
 
     return (
         <div className="projects-container">
-            
             {projects.map((project) => {
                 return (
                     <div key={project.key} className="project-card">
@@ -296,55 +301,64 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
-                        <section
-                            className="project-card-description"
-                            style={{
-                                opacity: project.showDescription ? "1" : "0",
-                                fontSize: project.showDescription
-                                    ? "1rem"
-                                    : "0px",
-                            }}
-                        >
-                            {" "}
-                            <h5>Description</h5>
-                            <p>{project.description}</p>
-                        </section>
-                        <section
-                            className="project-card-features"
-                            style={{
-                                opacity: project.showFeatures ? "1" : "0",
-                                fontSize: project.showFeatures ? "1rem" : "0px",
-                            }}
-                        >
-                            <h5>Features</h5>
-                            <ul>
-                                {project.features.map((feature, i) => {
-                                    return (
-                                        <li key={`${project.key}${i}`}>
-                                            {feature}
-                                        </li>
-                                    );
-                                })}
-                            </ul>
-                        </section>
+                        <div className="drop-down-container">
+                            <section
+                                className="project-card-description"
+                                style={{
+                                    opacity: project.showDescription
+                                        ? "1"
+                                        : "0",
+                                    fontSize: project.showDescription
+                                        ? "1rem"
+                                        : "0px",
+                                }}
+                            >
+                                <h5>Description</h5>
+                                <p>{project.description}</p>
+                            </section>
+                            <section
+                                className="project-card-features"
+                                style={{
+                                    opacity: project.showFeatures ? "1" : "0",
+                                    fontSize: project.showFeatures
+                                        ? "1rem"
+                                        : "0px",
+                                }}
+                            >
+                                <h5>Features</h5>
+                                <ul>
+                                    {project.features.map((feature, i) => {
+                                        return (
+                                            <li key={`${project.key}${i}`}>
+                                                {feature}
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </section>
 
-                        <div className="show-hide-button-container">
-                            <button
-                                className="show-hide-description-button"
-                                onClick={() => showHideDescription(project.key)}
-                            >
-                                {project.showDescription
-                                    ? "Hide description"
-                                    : "Show description"}
-                            </button>
-                            <button
-                                className="show-hide-features-button"
-                                onClick={() => showHideFeatures(project.key)}
-                            >
-                                {project.showFeatures
-                                    ? "Hide features"
-                                    : "Show features"}
-                            </button>
+                            <div className="show-hide-button-container">
+                                <button
+                                    className="show-hide-description-button"
+                                    onClick={() =>
+                                        showHideDescription(project.key)
+                                    }
+                                >
+                                    {project.showDescription
+                                        ? "Hide description"
+                                        : "Show description"}
+                                </button>
+                                <button
+                                    className="show-hide-features-button"
+                                    onClick={() =>
+                                        showHideFeatures(project.key)
+                                    }
+                                >
+                                    {project.showFeatures
+                                        ? "Hide features"
+                                        : "Show features"}
+                                </button>
+                            </div>
                         </div>
                     </div>
                 );

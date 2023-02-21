@@ -36,7 +36,7 @@ header {
 }
 .profile-pic-container {
     position: relative;
-    padding: 20px;
+    margin: 20px;
 }
 .profile-pic {
     width: 100%;
@@ -49,13 +49,13 @@ header {
     -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
 }
 .profile-pic-container > h1 {
-    font-size: 3rem;
+    font-size: 12vw;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     position: absolute;
     color: aliceblue;
-    bottom: 30px;
-    left: 25px;
+    bottom: 10px;
+    left: 10px;
     text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
 }
 .about-me-container {
@@ -69,7 +69,8 @@ header {
     padding: 10px 15px;
 }
 .social-links-container {
-    align-self: center;
+  display: flex;
+  justify-content: center;
     margin-top: 15px;
 }
 .social-links-container * svg {
@@ -88,60 +89,72 @@ header {
 }
 .projects-container {
     display: grid;
-/*👉    margin-top: 20px;👈*/
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    
-   /*👉 grid-template-rows: repeat(auto-fill, minmax(350px, 1fr));👈*/
-    /*👉    background-image: -webkit-linear-gradient(
-        220deg,
-        var(--honeydew) 29.6%,
-        var(--cerulean) 30%,
-        var(--cerulean) 60.6%,
-        var(--honeydew) 61%
-    );👈*/
+    grid-template-columns: repeat(auto-fit, minmax(320px, 330px));
+ border: 1px solid green;
+ justify-content: center;
 }
 
 .project-card {
-    margin: 15px;
+    
     background-color: var(--non-photo-blue);
     border-radius: 6px;
+
     display: flex;
     flex-direction: column;
     box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
     -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.35);
+    position: relative;
+    margin: 25px;
+    padding-bottom: 20px;
 }
 
 .project-card-screenshot {
     width: 95%;
-    max-height: 230px;
-    object-fit: contain;
+   height: 200px;
+    object-fit: scale-down;
     overflow: hidden;
     border-radius: 6px;
     align-self: center;
-    padding-top: 6px;
+     margin: 6px;
+    
 }
 .project-card-title-links {
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 10px 30px 10px;
+    align-items: center;
+    
 }
 .made-with-icons {
     transform: scale(1.1);
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 .made-with-icons * svg {
 }
 .project-card-title-links > h4 {
+  font-size: 0.8rem;
 }
 .project-card-icons * svg {
     transform: scale(1.4);
     margin: 0px 10px;
     text-decoration: none;
 }
+.drop-down-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-collapse: collapse;
+}
+.drop-down-container > section {
+    background-color: var(--berkeley-blue);
+    color: white;
+}
 .show-hide-button-container {
-    width: 100%;
+    /*👉  width: 100%;👈*/
     display: flex;
 }
 .show-hide-button-container > button {
@@ -150,7 +163,7 @@ header {
     z-index: 99;
     height: 25px;
     width: 50%;
-    /*👉 border: var(--cerulean) 1px solid;👈*/
+    height: 40px;
     border-top: none;
     border-bottom: none;
     cursor: pointer;
@@ -194,4 +207,72 @@ header {
     display: flex;
     justify-content: center;
     text-decoration: none;
+}
+
+
+@media screen and (min-width: 500px) {
+  h2 {
+    font-size: 6vw;
+  }
+ /*👉***************************************************HEADER👈*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   border: 1px solid green;
+   min-height: 300px;
+}
+.profile-pic-container {
+    position: relative;
+    /*👉min-width: 40%;👈*/
+    
+}
+.profile-pic {
+    object-fit:contain;
+    overflow: hidden;
+    min-width: 250px;
+    width: 100%;
+    height: auto;
+
+}
+.profile-pic-container > h1 {
+    font-size: 12vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    position: relative;
+    /*👉position: absolute;👈*/
+    color: aliceblue;
+    top: 0;
+    right: -120px;
+/*👉    bottom: 10px;
+    left: 10px;👈*/
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.6);
+}
+.about-me-container {
+    padding: 10px;
+    border: 1px yellow solid;
+}
+.about-me-container > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.about-me-container > p {
+    padding: 10px 15px;
+    font-size: 2.6vw;
+    
+}
+.social-links-container {
+   display: flex;
+  justify-content: center;
+    margin-top: 15px;
+}
+.social-links-container * svg {
+    transform: scale(1.7);
+}
+.social-links-container ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
 }

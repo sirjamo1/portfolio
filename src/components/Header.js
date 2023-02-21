@@ -31,8 +31,8 @@ const Header = () => {
                     dictum. Suspendisse egestas tortor id mauris iaculis, eu
                     malesuada nulla fermentum.
                 </p>
+                <SocialLinks gitHubHref={"https://github.com/sirjamo1"} />
             </div>
-            <SocialLinks gitHubHref={"https://github.com/sirjamo1"} />
         </header>
     );
 };
