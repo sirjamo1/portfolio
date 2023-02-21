@@ -90,7 +90,6 @@ header {
 .projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 330px));
- border: 1px solid green;
  justify-content: center;
 }
 
@@ -219,7 +218,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-   border: 1px solid green;
+
    min-height: 300px;
 }
 .profile-pic-container {
@@ -250,7 +249,7 @@ header {
 }
 .about-me-container {
     padding: 10px;
-    border: 1px yellow solid;
+
 }
 .about-me-container > h2 {
     text-align: center;
