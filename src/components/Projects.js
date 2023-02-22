@@ -19,11 +19,16 @@ import rockPaperScissors_1000 from "../assets/screenshots/rock-paper-scissors-10
 import tenzies_500 from "../assets/screenshots/react-tenzies-game-500.png";
 import tenzies_1000 from "../assets/screenshots/react-tenzies-game-1000.png";
 
+import { ReactComponent as HtmlSvg } from "../assets/skills/html.svg";
+import { ReactComponent as CssSvg } from "../assets/skills/css.svg";
+import { ReactComponent as JavaScriptSvg } from "../assets/skills/javaScript.svg";
+import { ReactComponent as ReactJsSvg } from "../assets/skills/reactJs.svg";
+import { ReactComponent as FirebaseSvg } from "../assets/skills/firebase.svg";
+import { ReactComponent as WebpackSvg } from "../assets/skills/webpack.svg";
 import { useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
+import { MdOutlineMobileFriendly, MdComputer } from "react-icons/md";
 import { RxOpenInNewWindow } from "react-icons/rx";
-import { DiCss3, DiReact, DiHtml5, DiJavascript1 } from "react-icons/di";
-import { SiFirebase } from "react-icons/si";
 
 const Projects = () => {
     const [projects, setProjects] = useState([
@@ -34,18 +39,19 @@ const Projects = () => {
             src1000: wheresWaldo_1000,
             showDescription: false,
             showFeatures: false,
+            compatible: [<MdComputer />],
             madeWith: [
-                <DiReact />,
-                <DiJavascript1 />,
-                <DiCss3 />,
-                <DiHtml5 />,
-                <SiFirebase />,
+                <ReactJsSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+                <FirebaseSvg />,
             ],
             description:
                 "Find Waldo and friends in a timed challenge, (best suited for pc).",
             features: [
                 "Timer starts when user clicks start, stops when last character is found.",
-                "Option to submit score to leader board (fireStore).",
+                "Option to submit score to leader board.",
                 "Updates best score.",
                 "View leader board.",
                 "Characters fade when found.",
@@ -61,9 +67,14 @@ const Projects = () => {
             src1000: battleships_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
-            description:
-                "Classic battleships game with a few modern twists, (best suited for pc).",
+            compatible: [<MdComputer />],
+            madeWith: [
+                <WebpackSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+            ],
+            description: "Classic battleships game with a few modern twists.",
             features: [
                 "Place ships on board by dragging/dropping (either horizontal or vertical).",
                 "Random placement for a quick game.",
@@ -83,12 +94,13 @@ const Projects = () => {
             src1000: beanGram_1000,
             showDescription: false,
             showFeatures: false,
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
             madeWith: [
-                <DiReact />,
-                <DiJavascript1 />,
-                <DiCss3 />,
-                <DiHtml5 />,
-                <SiFirebase />,
+                <ReactJsSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+                <FirebaseSvg />,
             ],
             description:
                 "Bean Gram is Mr Beans take on a simplified Facebook/Instagram.",
@@ -110,8 +122,14 @@ const Projects = () => {
             src1000: cvProject_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
-            description: "Create and edit a CV, (best suited for pc).",
+            compatible: [<MdComputer />],
+            madeWith: [
+                <ReactJsSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+            ],
+            description: "Create and edit a CV.",
             features: [
                 "Add and delete sections",
                 "Edit information in sections",
@@ -126,11 +144,17 @@ const Projects = () => {
             src1000: weatherApp_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [
+                <WebpackSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+            ],
             description:
                 "Weather app, user types in a location to find the current and forecast weather.",
             features: [
-                "Searches user input in json fil to retrieve an id..",
+                "Searches user input in json file to retrieve an id.",
                 "Uses id to fetch api from https://openweathermap.org (free version).",
                 "Sorts/calculates data into highs, lows etc.",
                 "Toggle switch to view temperatures in celsius or fahrenheit.",
@@ -148,7 +172,13 @@ const Projects = () => {
             src1000: memoryGame_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [
+                <ReactJsSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+            ],
             description:
                 "Memory game in which the user cannot click the same image twice.",
             features: [
@@ -166,7 +196,8 @@ const Projects = () => {
             src1000: etchASketch_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [<JavaScriptSvg />, <CssSvg />, <HtmlSvg />],
             description:
                 "Etch a Sketch is a remake of the classic toy, draw continuos drawings.",
             features: [
@@ -188,7 +219,8 @@ const Projects = () => {
             src1000: imageSlider_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [<JavaScriptSvg />, <CssSvg />, <HtmlSvg />],
             description: "Image slider to view your favorite pictures.",
             features: [
                 "Image changes every 5 seconds.",
@@ -209,7 +241,8 @@ const Projects = () => {
             src1000: rockPaperScissors_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [<JavaScriptSvg />, <CssSvg />, <HtmlSvg />],
             description: "Classic rock paper scissors game.",
             features: [
                 "First to 5 Wins.",
@@ -226,7 +259,13 @@ const Projects = () => {
             src1000: tenzies_1000,
             showDescription: false,
             showFeatures: false,
-            madeWith: [<DiReact />, <DiJavascript1 />, <DiCss3 />, <DiHtml5 />],
+            compatible: [<MdComputer />, <MdOutlineMobileFriendly />],
+            madeWith: [
+                <ReactJsSvg />,
+                <JavaScriptSvg />,
+                <CssSvg />,
+                <HtmlSvg />,
+            ],
             description:
                 "Roll a dice and save a selection, then roll again until all dice are the same.",
             features: [
@@ -274,14 +313,23 @@ const Projects = () => {
                     ${project.src1000} 1000w`}
                             alt={`${project.name} screenshot`}
                         />
-                        <div className="project-card-title-links">
-                            <h4>{project.name}</h4>
-                            <div className="made-with-icons">
-                                {project.madeWith.map((icon) => {
-                                    return icon;
-                                })}
+                        <div className="project-card-title-icons-repo-links-container">
+                            <div className="project-card-title-icons-container">
+                                <h3>{project.name}</h3>
+                                <div className="compatible-made-with-container">
+                                    <div className="compatible-icons">
+                                        {project.compatible.map((icon) => {
+                                            return icon;
+                                        })}
+                                    </div>
+                                    <div className="made-with-icons">
+                                        {project.madeWith.map((icon) => {
+                                            return icon;
+                                        })}
+                                    </div>
+                                </div>
                             </div>
-                            <div className="project-card-icons">
+                            <div className="project-card-repo-links">
                                 <a
                                     href={project.gitHubRepository}
                                     target="_blank"
@@ -301,6 +349,7 @@ const Projects = () => {
                                 </a>
                             </div>
                         </div>
+
                         <div className="drop-down-container">
                             <section
                                 className="project-card-description"
@@ -309,8 +358,11 @@ const Projects = () => {
                                         ? "1"
                                         : "0",
                                     fontSize: project.showDescription
-                                        ? "1rem"
+                                        ? "12px"
                                         : "0px",
+                                    zIndex: project.showDescription
+                                        ? "99"
+                                        : "-99",
                                 }}
                             >
                                 <h5>Description</h5>
@@ -321,8 +373,9 @@ const Projects = () => {
                                 style={{
                                     opacity: project.showFeatures ? "1" : "0",
                                     fontSize: project.showFeatures
-                                        ? "1rem"
+                                        ? "12px"
                                         : "0px",
+                                    zIndex: project.showFeatures ? "99" : "-99",
                                 }}
                             >
                                 <h5>Features</h5>
