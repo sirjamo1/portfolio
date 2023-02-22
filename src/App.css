@@ -104,6 +104,11 @@ header {
     position: relative;
     margin: 25px;
     padding-bottom: 20px;
+      background-image: -webkit-linear-gradient(
+        131deg,
+        var(--honeydew) 50%,
+        var(--non-photo-blue) 60%
+    );
 }
 
 .project-card-screenshot {
