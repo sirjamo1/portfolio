@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a6dcb62a.css",
+    "main.css": "/portfolio/static/css/main.d5c68914.css",
     "main.js": "/portfolio/static/js/main.158ed3ae.js",
     "static/media/profilePic_1600w.jpg": "/portfolio/static/media/profilePic_1600w.de4d5268d536e3db2be2.jpg",
     "static/media/wheres-waldo-1000.png": "/portfolio/static/media/wheres-waldo-1000.702dbac64e1e9fc55c3b.png",
@@ -35,11 +35,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3fddbbaa2ccd6635e2fa5b54f5822606.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
     "index.html": "/portfolio/index.html",
-    "main.a6dcb62a.css.map": "/portfolio/static/css/main.a6dcb62a.css.map",
+    "main.d5c68914.css.map": "/portfolio/static/css/main.d5c68914.css.map",
     "main.158ed3ae.js.map": "/portfolio/static/js/main.158ed3ae.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6dcb62a.css",
+    "static/css/main.d5c68914.css",
     "static/js/main.158ed3ae.js"
   ]
 }
