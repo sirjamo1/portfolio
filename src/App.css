@@ -33,6 +33,7 @@ header {
         var(--honeydew) 49.6%,
         var(--cerulean) 50%
     );
+    height: 100vh;
 }
 .profile-pic-container {
     position: relative;
