@@ -393,6 +393,11 @@ const Projects = () => {
                             <div className="show-hide-button-container">
                                 <button
                                     className="show-hide-description-button"
+                                    style={{
+                                        animation: project.showDescription
+                                            ? "activeButtonGradient 0.3s linear both"
+                                            : "activeButtonGradientReverse 0.3s linear both",
+                                    }}
                                     onClick={() =>
                                         showHideDescription(project.key)
                                     }
@@ -403,6 +408,11 @@ const Projects = () => {
                                 </button>
                                 <button
                                     className="show-hide-features-button"
+                                    style={{
+                                        animation: project.showFeatures
+                                            ? "activeButtonGradient 0.3s linear both"
+                                            : "activeButtonGradientReverse 0.3s linear both",
+                                    }}
                                     onClick={() =>
                                         showHideFeatures(project.key)
                                     }

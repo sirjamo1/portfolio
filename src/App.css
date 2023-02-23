@@ -104,7 +104,7 @@ header {
     position: relative;
     margin: 25px;
     padding-bottom: 20px;
-      background-image: -webkit-linear-gradient(
+    background-image: -webkit-linear-gradient(
         131deg,
         var(--honeydew) 50%,
         var(--non-photo-blue) 60%
@@ -119,7 +119,6 @@ header {
     border-radius: 6px;
     align-self: center;
     margin: 6px;
-    /*👉   border: 2px solid var(--berkeley-blue);👈*/
 }
 .project-card-title-icons-repo-links-container {
     display: flex;
@@ -184,30 +183,42 @@ header {
     color: white;
 }
 .show-hide-button-container {
-    /*👉  width: 100%;👈*/
     display: flex;
 }
 .show-hide-button-container > button {
-    transition: 2s;
-    transform: none 2s;
+      transition: 1s;
     z-index: 99;
-    height: 25px;
     width: 50%;
     height: 40px;
-    border-top: none;
-    border-bottom: none;
     cursor: pointer;
 }
+/*👉///////////////////////////////////////////////////////////////////👈*/
 .show-hide-description-button {
+    border: none;
     border-radius: 0px 0px 0px 6px;
     border-right: var(--cerulean) 1px solid;
-    border-left: none;
+    background: #f1faee;
+    background: linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+    background: -webkit-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+    background: -moz-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
 }
+
 .show-hide-features-button {
+    border: none;
     border-radius: 0px 0px 6px 0px;
     border-left: var(--cerulean) 1px solid;
-    border-right: none;
+    background: #f1faee;
+    background: linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+    background: -webkit-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+    background: -moz-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
 }
+.show-hide-description-button:hover {
+    font-size: 0.9rem;
+}
+.show-hide-features-button:hover {
+    font-size: 0.9rem;
+}
+
 .project-card-description {
     padding: 3px 10px;
     transition: ease-in-out 0.4s;
@@ -354,11 +365,179 @@ header {
     }
     .social-links-container * svg {
         transform: scale(3);
-
     }
     .social-links-container ul {
         list-style: none;
         display: flex;
         gap: 80px;
+    }
+}
+
+/*👉//////////////////////////**********************************ANIMATION👈*/
+/*👉@keyframes hoverButtonGradient {
+    //Doesn't work with other animation present....
+    0% {
+        background: linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+        background: -webkit-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+        background: -moz-linear-gradient(180deg, #f1faee 65%, #a8dadc 95%);
+    }
+    33% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 60%, #a8dadc 90%);
+        background: -webkit-linear-gradient(180deg, #f1faee 60%, #a8dadc 90%);
+        background: -moz-linear-gradient(180deg, #f1faee 60%, #a8dadc 90%);
+    }
+    66% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 55%, #a8dadc 85%);
+        background: -webkit-linear-gradient(180deg, #f1faee 55%, #a8dadc 85%);
+        background: -moz-linear-gradient(180deg, #f1faee 55%, #a8dadc 85%);
+    }
+
+    100% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -webkit-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -moz-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+    }
+}👈*/
+@keyframes activeButtonGradient {
+    0% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -webkit-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -moz-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+    }
+    10% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+        background: -webkit-linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+        background: -moz-linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+    }
+    20% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+        background: -webkit-linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+        background: -moz-linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+    }
+    30% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+        background: -webkit-linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+        background: -moz-linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+    }
+    40% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+        background: -webkit-linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+        background: -moz-linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+    }
+    50% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+        background: -webkit-linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+        background: -moz-linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+    }
+    60% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+        background: -webkit-linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+        background: -moz-linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+    }
+    70% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+        background: -webkit-linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+        background: -moz-linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+    }
+    80% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+        background: -webkit-linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+        background: -moz-linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+    }
+
+    90% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+        background: -webkit-linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+        background: -moz-linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+    }
+    100% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+        background: -webkit-linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+        background: -moz-linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+    }
+}
+@keyframes activeButtonGradientReverse {
+    0% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+        background: -webkit-linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+        background: -moz-linear-gradient(180deg, #f1faee 0%, #a8dadc 0%);
+    }
+    10% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+        background: -webkit-linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+        background: -moz-linear-gradient(180deg, #f1faee 5%, #a8dadc 8%);
+    }
+    20% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+        background: -webkit-linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+        background: -moz-linear-gradient(180deg, #f1faee 10%, #a8dadc 16%);
+    }
+    30% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+        background: -webkit-linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+        background: -moz-linear-gradient(180deg, #f1faee 15%, #a8dadc 24%);
+    }
+
+    40% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+        background: -webkit-linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+        background: -moz-linear-gradient(180deg, #f1faee 20%, #a8dadc 32%);
+    }
+    50% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+        background: -webkit-linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+        background: -moz-linear-gradient(180deg, #f1faee 25%, #a8dadc 40%);
+    }
+
+    60% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+        background: -webkit-linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+        background: -moz-linear-gradient(180deg, #f1faee 30%, #a8dadc 48%);
+    }
+    70% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+        background: -webkit-linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+        background: -moz-linear-gradient(180deg, #f1faee 35%, #a8dadc 56%);
+    }
+    80% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+        background: -webkit-linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+        background: -moz-linear-gradient(180deg, #f1faee 40%, #a8dadc 64%);
+    }
+
+    90% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+        background: -webkit-linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+        background: -moz-linear-gradient(180deg, #f1faee 45%, #a8dadc 72%);
+    }
+    100% {
+        background: #f1faee;
+        background: linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -webkit-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
+        background: -moz-linear-gradient(180deg, #f1faee 50%, #a8dadc 80%);
     }
 }
