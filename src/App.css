@@ -240,9 +240,9 @@ header {
     list-style-position: inside;
 }
 .load-more-projects {
-    
-    top: 0px;
-    align-self: center;
+  
+ width: 50%;
+ justify-self: center;
 }
 /*👉********************************************CONTACT👈*/
 .contact-container {
