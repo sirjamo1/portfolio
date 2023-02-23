@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.54af7b31.css",
-    "main.js": "/portfolio/static/js/main.bd67337c.js",
+    "main.css": "/portfolio/static/css/main.a6dcb62a.css",
+    "main.js": "/portfolio/static/js/main.cd98b421.js",
     "static/media/profilePic_1600w.jpg": "/portfolio/static/media/profilePic_1600w.de4d5268d536e3db2be2.jpg",
     "static/media/wheres-waldo-1000.png": "/portfolio/static/media/wheres-waldo-1000.702dbac64e1e9fc55c3b.png",
     "static/media/react-tenzies-game-1000.png": "/portfolio/static/media/react-tenzies-game-1000.215176ed067def09f75d.png",
@@ -35,11 +35,11 @@
     "static/media/css.svg": "/portfolio/static/media/css.3fddbbaa2ccd6635e2fa5b54f5822606.svg",
     "static/media/npm.svg": "/portfolio/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
     "index.html": "/portfolio/index.html",
-    "main.54af7b31.css.map": "/portfolio/static/css/main.54af7b31.css.map",
-    "main.bd67337c.js.map": "/portfolio/static/js/main.bd67337c.js.map"
+    "main.a6dcb62a.css.map": "/portfolio/static/css/main.a6dcb62a.css.map",
+    "main.cd98b421.js.map": "/portfolio/static/js/main.cd98b421.js.map"
   },
   "entrypoints": [
-    "static/css/main.54af7b31.css",
-    "static/js/main.bd67337c.js"
+    "static/css/main.a6dcb62a.css",
+    "static/js/main.cd98b421.js"
   ]
 }
